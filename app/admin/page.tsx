@@ -1,6 +1,6 @@
 import {DataTable} from '@/components/DataTable'
 import StatCard from '@/components/StatCard'
-import {columns, Payment} from '@/components/table/columns'
+import {columns} from '@/components/table/columns'
 import { getRecentAppointmentList } from '@/lib/actions/appointment.actions'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -40,7 +40,7 @@ const Admin = async () => {
             <section className="admin-stat">
                 <StatCard 
                     type="appointments"
-                    count={appointments.scheduledCount}
+                    count={appointments.scheduled}
                     label="Schedule appointments"
                     icon="/assets/icons/appointments.svg"
                 />
